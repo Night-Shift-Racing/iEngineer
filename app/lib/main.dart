@@ -1,6 +1,6 @@
-import 'package:app/i-engineer.dart';
+import 'package:app/app.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const IEngineer());
+  runApp(const App());
 }
