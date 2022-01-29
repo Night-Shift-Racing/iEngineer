@@ -1,7 +1,7 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:get_it/get_it.dart';
 
-import '../bootstrap_tests.dart';
+import '../bootstrap.dart';
 import 'routing_robot.dart';
 
 void main() {

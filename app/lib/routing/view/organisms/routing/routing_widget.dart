@@ -26,6 +26,8 @@ class RoutingWidget extends StatelessWidget {
       )
     ],
     redirect: (state) {
+      // We don't use a bloc here, because using async calls here opens a world
+      // of pain.
       if (!_userManager.isUserLoggedIn && state.subloc != '/login') {
         var redirect = '';
         if (state.fullpath != null) {
