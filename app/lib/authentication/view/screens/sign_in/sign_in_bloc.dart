@@ -7,11 +7,14 @@ import 'package:meta/meta.dart';
 part 'sign_in_event.dart';
 
 class SignInBloc extends Bloc<SignInEvent, SignInState> {
-  SignInBloc() : super(SignInState.initial()) {
+  final UserManager _userManager;
+  SignInBloc({required UserManager userManager})
+      : _userManager = userManager,
+        super(SignInState.initial()) {
     on<SigningIn>((event, emit) async {
       emit(SignInState.loggingIn());
       await Future.delayed(1.seconds);
-      UserManager.instance().loggedInUser = User();
+      _userManager.loggedInUser = User();
       emit(SignInState.logInSuccessful());
     });
   }
