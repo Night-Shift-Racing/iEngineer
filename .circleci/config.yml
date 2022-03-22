@@ -11,6 +11,7 @@ jobs:
       # replace with your preferred image
       - image: cimg/base:stable
     steps:
+      - checkout
       - flutter/install_sdk_and_pub:
           app-dir: ./app 
           flutter_version: '2.10.0' 
@@ -18,7 +19,7 @@ jobs:
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
-workflows:
+ workflows:
     app:
       jobs:
         - flutter/lint:
