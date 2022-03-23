@@ -35,6 +35,8 @@ class RoutingWidget extends StatelessWidget {
         }
         return '/login$redirect';
       }
+
+      return null;
     },
   );
 
