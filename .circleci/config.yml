@@ -14,8 +14,8 @@ jobs:
       - checkout
       - flutter/install_sdk_and_pub:
           app-dir: ./app 
-          flutter_version: '2.10.0' 
-      - run: flutter test ./integration_test
+          flutter_version: '2.10.0'
+      - run: cd app && flutter test ./integration_test 
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
