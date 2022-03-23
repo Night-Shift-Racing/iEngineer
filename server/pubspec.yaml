@@ -9,9 +9,13 @@ environment:
 dependencies:
   build_runner: ^2.1.7
   eventstore_client: ^0.2.2
+  eventuous: ^0.0.12
+  freezed_annotation: ^1.1.0
   shelf: ^1.2.0
   shelf_router: ^1.1.2
 
 dev_dependencies:
   lints: ^1.0.0
   shelf_router_generator: ^1.0.2
+  eventuous_generator: ^0.0.12
+  freezed: ^1.1.0

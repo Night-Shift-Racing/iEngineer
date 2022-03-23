@@ -1,6 +1,6 @@
 import 'package:shelf/shelf_io.dart' as shelf_io;
 
-import 'team/teams_controller.dart';
+import 'team/controllers/teams_controller.dart';
 
 void main() async {
   var service = TeamsController();

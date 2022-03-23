@@ -1,4 +1,4 @@
-import 'package:app/authentication/authentication.dart';
+import 'package:endurance_racing_helper/authentication/authentication.dart';
 
 abstract class Authenticator {
   Future<User> logIn();

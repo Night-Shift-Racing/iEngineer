@@ -1,5 +1,7 @@
-import 'package:app/authentication/bootstrap.dart' as bootstrap_authentication;
-import 'package:app/routing/bootstrap.dart' as bootstrap_routing;
+import 'package:endurance_racing_helper/authentication/bootstrap.dart'
+    as bootstrap_authentication;
+import 'package:endurance_racing_helper/routing/bootstrap.dart'
+    as bootstrap_routing;
 import 'package:get_it/get_it.dart';
 
 bootstrap(GetIt getIt) {

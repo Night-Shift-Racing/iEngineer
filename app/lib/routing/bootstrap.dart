@@ -1,4 +1,4 @@
-import 'package:app/authentication/authentication.dart';
+import 'package:endurance_racing_helper/authentication/authentication.dart';
 import 'package:get_it/get_it.dart';
 
 bootstrap(GetIt getIt) {

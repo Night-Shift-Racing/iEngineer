@@ -1,6 +1,6 @@
-import 'package:app/authentication/authentication.dart';
-import 'package:app/authentication/view/screens/sign_in/sign_in_bloc.dart';
-import 'package:app/authentication/view/screens/sign_in/sign_in_state.dart';
+import 'package:endurance_racing_helper/authentication/authentication.dart';
+import 'package:endurance_racing_helper/authentication/view/screens/sign_in/sign_in_bloc.dart';
+import 'package:endurance_racing_helper/authentication/view/screens/sign_in/sign_in_state.dart';
 import 'package:bloc_test/bloc_test.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:get_it/get_it.dart';

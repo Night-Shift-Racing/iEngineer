@@ -7,14 +7,14 @@ packages:
       name: _fe_analyzer_shared
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "34.0.0"
+    version: "31.0.0"
   analyzer:
     dependency: transitive
     description:
       name: analyzer
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "3.2.0"
+    version: "2.8.0"
   archive:
     dependency: transitive
     description:
@@ -148,6 +148,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.2.1"
+  equatable:
+    dependency: transitive
+    description:
+      name: equatable
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.0.3"
   eventstore_client:
     dependency: "direct main"
     description:
@@ -155,6 +162,20 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.2.2"
+  eventuous:
+    dependency: "direct main"
+    description:
+      name: eventuous
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.0.12"
+  eventuous_generator:
+    dependency: "direct dev"
+    description:
+      name: eventuous_generator
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.0.12"
   file:
     dependency: transitive
     description:
@@ -169,6 +190,20 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.0.0"
+  freezed:
+    dependency: "direct dev"
+    description:
+      name: freezed
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.1.0"
+  freezed_annotation:
+    dependency: "direct main"
+    description:
+      name: freezed_annotation
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.1.0"
   frontend_server_client:
     dependency: transitive
     description:
@@ -176,6 +211,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.1.2"
+  get_it:
+    dependency: transitive
+    description:
+      name: get_it
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "7.2.0"
   glob:
     dependency: transitive
     description:
@@ -260,6 +302,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "4.4.0"
+  json_patch:
+    dependency: transitive
+    description:
+      name: json_patch
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "3.0.0"
   lints:
     dependency: "direct dev"
     description:

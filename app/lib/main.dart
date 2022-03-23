@@ -1,5 +1,5 @@
-import 'package:app/bootstrap.dart';
-import 'package:app/routing/routing.dart';
+import 'package:endurance_racing_helper/bootstrap.dart';
+import 'package:endurance_racing_helper/routing/routing.dart';
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
 

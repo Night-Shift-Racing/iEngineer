@@ -1,5 +1,5 @@
-import 'package:app/authentication/model/user.dart';
-import 'package:app/common/model/change_notifyer.dart';
+import 'package:endurance_racing_helper/authentication/model/user.dart';
+import 'package:endurance_racing_helper/common/model/change_notifyer.dart';
 
 class UserManager extends ChangeNotifier<UserManager> {
   static UserManager? _instance;

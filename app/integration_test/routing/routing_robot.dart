@@ -1,5 +1,5 @@
-import 'package:app/authentication/authentication.dart';
-import 'package:app/routing/routing.dart';
+import 'package:endurance_racing_helper/authentication/authentication.dart';
+import 'package:endurance_racing_helper/routing/routing.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 class RoutingRobot {
