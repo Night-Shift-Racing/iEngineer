@@ -1,5 +1,5 @@
 desc "Deploy a new beta build to Google Play"
-lane :beta do
+lane :deploy do
     build_number = number_of_commits()
     Dir.chdir "../.." do
       sh("flutter", "packages", "get")
@@ -7,5 +7,9 @@ lane :beta do
       sh("flutter", "build", "appbundle", "--build-number=#{build_number}")
     end
 
-    upload_to_play_store(track: 'beta', aab: '../build/app/outputs/bundle/release/app-release.aab')
+    upload_to_play_store(
+        track: 'internal',
+        release_status: 'draft',
+        aab: '../build/app/outputs/bundle/release/app-release.aab'
+    )
 end
