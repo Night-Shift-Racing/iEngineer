@@ -9,7 +9,6 @@ lane :deploy do
 
     upload_to_play_store(
         track: 'internal',
-        release_status: 'draft',
         aab: '../build/app/outputs/bundle/release/app-release.aab'
     )
 end
