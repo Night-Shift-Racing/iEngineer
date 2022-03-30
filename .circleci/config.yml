@@ -5,20 +5,29 @@ version: 2.1
 orbs:
   flutter: circleci/flutter@1.0.1
 
+executors:
+  android-flutter:
+    docker:
+      - image: cirrusci/flutter:2.10.0
+    environment:
+      TERM: dumb
+      _JAVA_OPTIONS: "-Xmx2048m -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap"
+      GRADLE_OPTS: '-Dorg.gradle.jvmargs="-Xmx2048m"'
+
 jobs:
   integration-tests:
-    docker:
-      # replace with your preferred image
-      - image: cimg/base:stable
+    executor: android-flutter
     steps:
       - checkout
-      - flutter/install_sdk_and_pub:
-          app-dir: ./app 
-          flutter_version: '2.10.0'
-      - run: cd app && flutter test ./integration_test 
+      - run: cd app && flutter test ./integration_test
+  deploy:
+    executor: android-flutter
+    steps:
+      - checkout
+      - run: echo "$PLAY_STORE_UPLOAD_KEY" | base64 --decode > key.jks
+      - run: echo "$PLAY_STORE_UPLOAD_KEY_INFO" | base64 --decode > android/key.properties
+      - run: cd android && fastlane deploy
 
-# Invoke jobs via workflows
-# See: https://circleci.com/docs/2.0/configuration-reference/#workflows
 workflows:
     app:
       jobs:
