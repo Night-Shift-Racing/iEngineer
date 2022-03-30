@@ -24,7 +24,7 @@ jobs:
     executor: android-flutter
     steps:
       - checkout
-      - run: echo "ANDROID_APP_UPLOAD_KEYSTORE" | base64 --decode > app/android/app/upload-keystore.jks
+      - run: echo "$ANDROID_APP_UPLOAD_KEYSTORE" | base64 --decode > app/android/app/upload-keystore.jks
       - run: echo "$ANDROID_APP_KEY_PROPERTIES" | base64 --decode > app/android/key.properties
       - run: echo "$FASTLANE_SERVICE_ACCOUNT" | base64 --decode > app/android/fastlane-service-account.json
       - run: cd app/android && fastlane deploy
