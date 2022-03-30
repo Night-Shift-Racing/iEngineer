@@ -38,3 +38,8 @@ workflows:
             app-dir: ./app 
             version: '2.10.0' 
         - integration-tests
+        - deploy:
+            requires:
+              - flutter/lint
+              - flutter/unit_test
+              - integration-tests
